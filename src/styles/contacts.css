@@ -1,0 +1,132 @@
+.contact-section {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  font-family: 'Aliotext', sans-serif;
+  margin-top: -30px;
+}
+
+.contact-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  max-width: 1000px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.contact-title {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 auto 30px auto;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #0061bf;
+  width: fit-content;
+  color: #0061bf;
+  font-family: 'Aliotext', sans-serif;
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+  max-width: 480px;
+}
+
+.contact-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.mascot-img {
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.form-container {
+  flex: 1;
+  min-width: 280px;
+  max-width: 480px;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+  font-family: 'Aliotext', sans-serif;
+  text-align: left;
+}
+
+.form-input,
+.form-textarea,
+.form-button {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Aliotext', sans-serif;
+  box-sizing: border-box;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #0061bf;
+  outline: none;
+}
+
+.form-button {
+  background-color: #00425C;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.form-button:hover {
+  background-color: #004aad;
+}

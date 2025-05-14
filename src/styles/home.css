@@ -1,0 +1,125 @@
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Adjust the position of the subtitle */
+.home-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+    margin-top: -20px; /* Move the entire text block higher */
+}
+
+.home-subtitle {
+    font-size: 1.2rem; /* Slightly larger font size */
+    font-weight: 900; /* Make the subtitle thicker */
+    color: #0066ff;
+    margin-bottom: 30px; /* Reduce the space below the subtitle */
+    text-transform: uppercase;
+    font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
+    margin-top: 10px; /* Adjust the subtitle's top margin */
+}
+
+.home-text h1 {
+    font-size: 3.5rem; /* Adjusted size for the title */
+    line-height: 1.1;
+    font-weight: bold;
+    margin-top: 5px; /* Reduce the space above the title */
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
+}
+
+.home-text h1 span {
+    color: #0066ff;
+}
+
+.home-text p {
+    font-size: 1rem;
+    color: #000; /* Make the paragraph text black */
+    font-weight: 600; /* Make the paragraph text semi-bold */
+    margin-bottom: 30px;
+    font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
+}
+
+.home-buttons {
+    display: flex;
+    gap: 40px;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
+}
+
+.btn.primary {
+    background-color: #01b6ff; /* Updated button color */
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn.primary:hover {
+    background-color: #004aad; /* Use the current color as the hover color */
+}
+
+.btn.secondary {
+    background-color: transparent;
+    color: #0066ff;
+    border: 2px solid #0066ff;
+    font-weight: bold;
+}
+
+.btn.secondary:hover {
+    background-color: #0066ff;
+    color: #fff;
+}
+
+.main-image {
+    flex: 1;
+    max-width: 780px; /* Increased the maximum width for a larger image */
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        text-align: center;
+    }
+
+    .home-text {
+        max-width: 100%; /* Allow text to take full width */
+        order: 1; /* Ensure the text appears first */
+    }
+
+    .main-image {
+        max-width: 100%; /* Ensure the image scales down on smaller screens */
+        order: 2; /* Ensure the image appears below the text */
+    }
+
+    .home-text h1 {
+        font-size: 2.5rem; /* Reduce title size for smaller screens */
+    }
+
+    .home-subtitle {
+        font-size: 1rem; /* Adjust subtitle size for smaller screens */
+    }
+}

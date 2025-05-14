@@ -1,0 +1,107 @@
+/* Features Section */
+.features-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
+    margin-top: -50px;
+  }
+  
+  .features-header h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
+  }
+  
+  .features-header p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 40px;
+    font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
+  }
+  
+  /* Features Cards */
+  .features-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-card.active {
+    border-color: #0066ff; /* Change border color for active card */
+    background-color: #e6f7ff; /* Change background color for active card */
+  }
+  
+  .feature-icon-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+    color: #0066ff;
+  }
+  
+  .feature-card h3 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .feature-card p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .feature-card a {
+    font-size: 1.5rem;
+    color: #0066ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .feature-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Pagination Dots */
+  .features-pagination {
+    margin-top: 20px;
+  }
+  
+  .features-pagination .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .features-pagination .dot.active {
+    background: #0066ff;
+  }

@@ -1,0 +1,113 @@
+.pricing-section {
+    text-align: center;
+    padding: 10px 20px 60px; /* Added bottom padding for spacing */
+    background: #fff;
+    font-family: 'Inter', sans-serif; /* Apply Inter font globally to the pricing section */
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
+    margin-bottom: 30px; /* Add spacing below the title */
+}
+
+.subtitle {
+    max-width: 600px;
+    margin: 30px auto 20px; /* Add spacing above and below the subtitle */
+    font-size: 20px;
+    color: #444;
+    font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
+    font-weight: medium; /* Use medium weight for the subtitle */
+}
+
+.billing-toggle {
+    margin-bottom: 40px;
+    font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
+}
+
+.billing-toggle button {
+    padding: 10px 20px;
+    border: 1px solid #888;
+    background: white;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
+}
+
+.billing-toggle button.active {
+    background: #01B6FF;
+    color: #fff;
+    border-color: #000;
+}
+
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px 30px; /* Adjusted padding for all cards */
+    width: 260px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+}
+
+.card.featured {
+    background: #009cff;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 156, 255, 0.3);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold; /* Ensure the heading is bold */
+}
+
+.card .price {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold; 
+}
+
+.card ul {
+    list-style: disc; 
+    padding-left: 20px; 
+    margin: 0 0 20px; /* Add spacing below the list */
+}
+
+.card ul li {
+    margin-bottom: 8px; /* Add spacing between list items */
+    font-weight: normal; /* Ensure list items are not bold */
+}
+
+.contact-btn {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+}
+
+.contact-btn.dark {
+    background: #000;
+    color: white;
+}
+
+.contact-btn.light {
+    background: white;
+    color: #009cff;
+}

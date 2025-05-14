@@ -1,3 +1,39 @@
+@font-face {
+  font-family: 'Aliotext';
+  src: url('./assets/alio-text/Alio Text Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aliotext';
+  src: url('./assets/alio-text/Alio Text Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/Inter/static/Inter_18pt-Black.ttf') format('truetype');
+  font-weight: black;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/Inter/static/Inter_18pt-Light.ttf') format('truetype');
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/Inter/static/Inter_18pt-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 .App {
   text-align: center;
 }
@@ -36,3 +72,4 @@
     transform: rotate(360deg);
   }
 }
+

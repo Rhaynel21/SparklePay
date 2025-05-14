@@ -1,0 +1,12 @@
+/* Shared Background Section */
+.shared-background {
+    position: relative;
+    background: url('../assets/bg1.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll;
+    width: 100%;
+    height: auto; /* Adjusts height based on content */
+    padding: 0;
+    display: block;
+    z-index: 0;
+}

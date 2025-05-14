@@ -1,0 +1,68 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for subtle separation */
+  border-bottom: 2px solid #e0e0e0; /* Add a light gray bottom border */
+  font-family: 'Aliotext', sans-serif; /* Apply Aliotext font globally to the header */
+}
+
+.logo-img {
+  width: 150px;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a,
+.nav .active {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold; /* Make the font bold */
+  position: relative;
+  padding-bottom: 5px; /* Add space for the underline */
+  font-family: 'Aliotext', sans-serif; /* Ensure Aliotext font is applied */
+}
+
+.nav a:hover,
+.nav .active {
+  color: #0061bf;
+}
+
+.nav a::after,
+.nav .active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0061bf; /* Underline color */
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after,
+.nav .active::after {
+  width: 100%; /* Expand underline on hover or when active */
+}
+
+.demo-btn .get-demo-btn {
+  text-decoration: none;
+  background-color: #0061bf;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold; /* Make the button text bold */
+  font-family: 'Aliotext', sans-serif; /* Ensure Aliotext font is applied */
+  transition: background-color 0.3s ease;
+}
+
+.demo-btn .get-demo-btn:hover {
+  background-color: #004aad;
+}
