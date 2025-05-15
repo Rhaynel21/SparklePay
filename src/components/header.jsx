@@ -25,7 +25,15 @@ export default function Header() {
         </NavLink>
         <a href="#products" onClick={() => setMenuOpen(false)}>Products</a>
         <a href="#features" onClick={() => setMenuOpen(false)}>Features</a>
-        <a href="#aboutUs" onClick={() => setMenuOpen(false)}>About Us</a>
+        
+        <NavLink
+          to="/aboutus"
+          onClick={() => setMenuOpen(false)}
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
+          About Us
+        </NavLink>
+
         <NavLink
           to="/pricing"
           onClick={() => setMenuOpen(false)}

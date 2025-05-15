@@ -7,6 +7,7 @@ import Footer from './components/footer';
 import Contact from './section/contacts';
 import FeaturesSection from './section/features';
 import SharedLayout from './components/sharedbackground'; 
+import About from './pages/aboutus';
 
 import './App.css';
 
@@ -16,6 +17,9 @@ function App() {
       <Routes>
         {/* Pricing Page */}
         <Route path="/pricing" element={<Pricing />} />
+
+        {/* About Us Page */}
+        <Route path="/aboutus" element={<About />} />
 
         {/* Main Website Layout */}
         <Route
