@@ -4,10 +4,10 @@
     padding: 30px 20px;
     text-align: left;
     margin-top: -40px;
-}
-
-/* Tabs Header */
-.tabs-header {
+  }
+  
+  /* Tabs Header */
+  .tabs-header {
     display: flex;
     justify-content: flex-start;
     gap: 30px;
@@ -15,10 +15,10 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-}
-
-/* Tab Buttons */
-.tab {
+  }
+  
+  /* Tab Buttons */
+  .tab {
     font-size: 1.5rem;
     font-weight: bold;
     color: #0066ff;
@@ -29,29 +29,29 @@
     border-bottom: 2px solid transparent;
     transition: all 0.3s ease;
     font-family: 'Aliotext', sans-serif;
-}
-
-.tab.active {
+  }
+  
+  .tab.active {
     border-bottom: 2px solid #0066ff;
     color: #004aad;
-}
-
-.tab:hover {
+  }
+  
+  .tab:hover {
     color: #004aad;
-}
-
-/* Tab Content */
-.tab-content {
+  }
+  
+  /* Tab Content */
+  .tab-content {
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
     margin-top: -40px;
     padding-bottom: 20px;
-}
-
-/* Layout Wrapper */
-.content-wrapper {
+  }
+  
+  /* Layout Wrapper */
+  .content-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,31 +60,31 @@
     width: 100%;
     max-width: 1200px;
     padding-top: 0;
-}
-
-/* Text Block */
-.text {
+  }
+  
+  /* Text Block */
+  .text {
     flex: 1;
     max-width: 500px;
     margin-top: -30px;
-}
-
-.text h2 {
+  }
+  
+  .text h2 {
     font-size: 2.8rem;
     font-weight: bold;
     margin-bottom: 20px;
     color: #333;
     font-family: 'Aliotext', sans-serif;
-}
-
-.text p {
+  }
+  
+  .text p {
     font-size: 1.5rem;
     color: #555;
     margin-bottom: 30px;
     font-family: 'Aliotext', sans-serif;
-}
-
-.text .btn {
+  }
+  
+  .text .btn {
     padding: 10px 20px;
     font-size: 1.3rem;
     background-color: #0066ff;
@@ -95,14 +95,14 @@
     text-decoration: none;
     transition: all 0.3s ease;
     font-family: 'Aliotext', sans-serif;
-}
-
-.text .btn:hover {
+  }
+  
+  .text .btn:hover {
     background-color: #004aad;
-}
-
-/* Image Styling */
-.image {
+  }
+  
+  /* Image Styling */
+  .image {
     flex: 1;
     min-width: 300px;
     min-height: 300px;
@@ -111,10 +111,59 @@
     justify-content: center;
     text-align: center;
     padding-left: 50px;
-}
-
-.product-image {
+  }
+  
+  .product-image {
     max-width: 100%;
     max-height: 400px;
     object-fit: contain;
-}
+  }
+  
+  /* ========== Responsive ========== */
+  @media (max-width: 768px) {
+    .tabs-header {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      text-align: center;
+    }
+
+    .tab-content {
+        display: flex;
+        margin-top: -20px;
+        
+      }
+  
+    .content-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text {
+      max-width: 100%;
+      margin-top: 0;
+    }
+  
+    .text h2 {
+      font-size: 2rem;
+    }
+  
+    .text p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+  
+    .text .btn {
+      font-size: 1.2rem;
+    }
+  
+    .image {
+      padding-left: 0;
+      margin-top: -30px;
+    }
+  
+    .product-image {
+      max-height: 300px;
+    }
+  }
+  

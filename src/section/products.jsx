@@ -27,6 +27,7 @@ const Products = () => {
       {/* Tab Content */}
       <div className="tab-content">
         <div className="content-wrapper">
+          {/* Text Section */}
           <div className="text">
             {activeTab === 'pos' ? (
               <>
@@ -50,6 +51,7 @@ const Products = () => {
             </a>
           </div>
 
+          {/* Image Section */}
           <div className="image">
             <img
               src={activeTab === 'pos' ? posImage : selfCheckoutImage}

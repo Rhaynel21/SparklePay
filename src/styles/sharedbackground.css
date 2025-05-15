@@ -1,12 +1,17 @@
 /* Shared Background Section */
 .shared-background {
     position: relative;
-    background: url('../assets/bg1.png') no-repeat center center;
-    background-size: cover;
+    background-image: url('../assets/bg1.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover; /* STRETCH full width & height */
     background-attachment: scroll;
-    width: 100%;
-    height: auto; /* Adjusts height based on content */
+    width: 100vw; /* Use full viewport width */
+    min-height: 100vh; /* Always at least screen height */
     padding: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
     z-index: 0;
-}
+    
+  }
+  

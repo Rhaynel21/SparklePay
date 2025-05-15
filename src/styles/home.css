@@ -3,63 +3,63 @@
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
-}
-
-.home-content {
+  }
+  
+  .home-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     width: 100%;
     flex-wrap: wrap;
-}
-
-/* Adjust the position of the subtitle */
-.home-text {
+  }
+  
+  .home-text {
     flex: 1;
     max-width: 600px;
     text-align: left;
-    margin-top: -20px; /* Move the entire text block higher */
-}
-
-.home-subtitle {
-    font-size: 1.2rem; /* Slightly larger font size */
-    font-weight: 900; /* Make the subtitle thicker */
+    margin-top: 60px;
+  }
+  
+  .home-subtitle {
+    font-size: 1.2rem;
+    font-weight: 900;
     color: #0066ff;
-    margin-bottom: 30px; /* Reduce the space below the subtitle */
+    margin-bottom: 30px;
     text-transform: uppercase;
-    font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
-    margin-top: 10px; /* Adjust the subtitle's top margin */
-}
-
-.home-text h1 {
-    font-size: 3.5rem; /* Adjusted size for the title */
+    font-family: 'Aliotext', sans-serif;
+    margin-top: 10px;
+  }
+  
+  .home-text h1 {
+    font-size: 3.5rem;
     line-height: 1.1;
     font-weight: bold;
-    margin-top: 5px; /* Reduce the space above the title */
+    margin-top: 5px;
     margin-bottom: 20px;
     color: #333;
-    font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
-}
-
-.home-text h1 span {
+    font-family: 'Aliotext', sans-serif;
+  }
+  
+  .home-text h1 span {
     color: #0066ff;
-}
-
-.home-text p {
+  }
+  
+  .home-text p {
     font-size: 1rem;
-    color: #000; /* Make the paragraph text black */
-    font-weight: 600; /* Make the paragraph text semi-bold */
+    color: #000;
+    font-weight: 600;
     margin-bottom: 30px;
-    font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
-}
-
-.home-buttons {
+    font-family: 'Aliotext', sans-serif;
+  }
+  
+  .home-buttons {
     display: flex;
     gap: 40px;
-}
-
-.btn {
+    flex-wrap: wrap;
+  }
+  
+  .btn {
     padding: 12px 24px;
     font-size: 1.1rem;
     border: none;
@@ -67,59 +67,89 @@
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
-    font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
-}
-
-.btn.primary {
-    background-color: #01b6ff; /* Updated button color */
+    font-family: 'Aliotext', sans-serif;
+  }
+  
+  .btn.primary {
+    background-color: #01b6ff;
     color: #fff;
     font-weight: bold;
-}
-
-.btn.primary:hover {
-    background-color: #004aad; /* Use the current color as the hover color */
-}
-
-.btn.secondary {
+  }
+  
+  .btn.primary:hover {
+    background-color: #004aad;
+  }
+  
+  .btn.secondary {
     background-color: transparent;
     color: #0066ff;
     border: 2px solid #0066ff;
     font-weight: bold;
-}
-
-.btn.secondary:hover {
+  }
+  
+  .btn.secondary:hover {
     background-color: #0066ff;
     color: #fff;
-}
-
-.main-image {
+  }
+  
+  /* Desktop image */
+  .main-image {
     flex: 1;
-    max-width: 780px; /* Increased the maximum width for a larger image */
+    max-width: 780px;
     height: auto;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
+    margin-top: 90px;
+  }
+  
+  /* Visibility classes */
+  .desktop-only {
+    display: block;
+  }
+  
+  .mobile-only {
+    display: none;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
     .home-content {
-        flex-direction: column; /* Stack content vertically on smaller screens */
-        text-align: center;
+      flex-direction: column;
+      text-align: center;
     }
-
+  
     .home-text {
-        max-width: 100%; /* Allow text to take full width */
-        order: 1; /* Ensure the text appears first */
+      margin-top: 20px;
+      max-width: 100%;
+      text-align: center;
     }
-
-    .main-image {
-        max-width: 100%; /* Ensure the image scales down on smaller screens */
-        order: 2; /* Ensure the image appears below the text */
-    }
-
+  
     .home-text h1 {
-        font-size: 2.5rem; /* Reduce title size for smaller screens */
+      font-size: 2rem;
     }
-
+  
     .home-subtitle {
-        font-size: 1rem; /* Adjust subtitle size for smaller screens */
+      font-size: 1.2rem;
+      margin-top: 50px;
+      margin-bottom: 20px;
     }
-}
+  
+    .home-text p {
+      font-size: 0.95rem;
+    }
+  
+    .main-image.desktop-only {
+      display: none;
+    }
+  
+    .main-image.mobile-only {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+    }
+  
+    .home-buttons {
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  

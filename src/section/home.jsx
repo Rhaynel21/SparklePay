@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/home.css'; // Ensure the CSS file is correctly imported
-import selfCheckoutImage from '../assets/pos1.png'; // Replace with your actual image path
+import '../styles/home.css';
+import selfCheckoutImage from '../assets/pos1.png';
 
 const Home = () => {
   return (
@@ -9,6 +9,8 @@ const Home = () => {
         {/* Text Content */}
         <div className="home-text">
           <h4 className="home-subtitle">POS & Self-Checkout Machine Platform</h4>
+          <img src={selfCheckoutImage} alt="Self-Checkout Machine" className="main-image mobile-only" />
+
           <h1>
             Self-checkout made effortless. <span>POS made powerful</span>
           </h1>
@@ -21,8 +23,8 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Image */}
-        <img src={selfCheckoutImage} alt="Self-Checkout Machine" className="main-image" />
+        {/* Image (shown only in desktop) */}
+        <img src={selfCheckoutImage} alt="Self-Checkout Machine" className="main-image desktop-only" />
       </div>
     </section>
   );

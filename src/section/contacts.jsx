@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/contacts.css';
 import mascotImg from '../assets/cow1.png';
-import axios from 'axios'; // Make sure axios is installed: npm install axios
+import axios from 'axios';
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -16,12 +16,18 @@ const Contact = () => {
     setStatus('Sending...');
 
     try {
-      const res = await axios.post('http://localhost:5000/api/contact', formData);
+      await axios.post('http://localhost:5000/api/contact', formData);
       setStatus('Message sent successfully! ✅');
       setFormData({ name: '', email: '', message: '' });
+
+      // Clear message after 2 seconds
+      setTimeout(() => setStatus(''), 2000);
     } catch (err) {
       console.error(err);
       setStatus('Failed to send message ❌');
+
+      // Clear message after 2 seconds
+      setTimeout(() => setStatus(''), 2000);
     }
   };
 

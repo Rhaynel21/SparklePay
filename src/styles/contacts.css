@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f9f9f9;
+  background: white;
   font-family: 'Aliotext', sans-serif;
   margin-top: -30px;
 }
@@ -129,4 +129,73 @@
 
 .form-button:hover {
   background-color: #004aad;
+}
+
+/* Responsive Fixes for Contact Section */
+@media (max-width: 768px) {
+
+  .contact-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    max-width: 400px;
+    width: 80%;
+    border: 1px solid #ccc;
+  }
+
+  .form-container {
+    flex: 1;
+    min-width: 200px;
+    max-width: 380px;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+  }
+
+  .contact-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    text-align: center;
+    order: 1;
+  }
+
+  .mascot-img {
+    width: 120px;
+    height: auto;
+    margin: 10px auto 0;
+  }
+
+  .contact-heading,
+  .contact-description {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: 100%;
+    order: 2;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 0;
+  }
+
+  .form-group {
+    max-width: 100%;
+  }
 }

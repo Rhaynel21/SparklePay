@@ -50,14 +50,19 @@ const Footer = () => {
 
         {/* Contact Info */}
         <div className="footer-column">
-          <h4>Contact Us</h4>
-          <p>📍 Building 827 P. Paredes Street, Barangay 400, Sampaloc Manila, Philippines</p>
-          <p>📞 +63 906 248 2677</p>
-          <p>📧 starjobs@gmail.com</p>
+        <h4>Legal</h4>
+          <ul>
+            <li><a aria-label="Terms">Terms</a></li>
+            <li><a aria-label="Privacy">Privacy</a></li>
+            <li><a aria-label="Cookies">Cookies</a></li>
+            <li><a aria-label="Contact">Contact</a></li>
+          </ul>
+          
           <div className="social-icons">
             <a href="facebook.com" aria-label="Facebook"><img src={fbIcon} alt="Facebook Icon" /></a>
             <a href="x.com" aria-label="x"><img src={xIcon} alt="X Icon" /></a>
           </div>
+          <p className="copyright">© 2025 Starjobs. All rights reserved.</p>
         </div>
 
       </div>

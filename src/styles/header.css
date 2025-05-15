@@ -1,19 +1,27 @@
+/* Base header styles */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for subtle separation */
-  border-bottom: 2px solid #e0e0e0; /* Add a light gray bottom border */
-  font-family: 'Aliotext', sans-serif; /* Apply Aliotext font globally to the header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #e0e0e0;
+  font-family: 'Aliotext', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
+/* Logo */
 .logo-img {
   width: 150px;
   height: auto;
 }
 
+/* Nav styles */
 .nav {
   display: flex;
   gap: 20px;
@@ -24,10 +32,10 @@
   text-decoration: none;
   color: #333333;
   font-size: 16px;
-  font-weight: bold; /* Make the font bold */
+  font-weight: bold;
   position: relative;
-  padding-bottom: 5px; /* Add space for the underline */
-  font-family: 'Aliotext', sans-serif; /* Ensure Aliotext font is applied */
+  padding-bottom: 5px;
+  font-family: 'Aliotext', sans-serif;
 }
 
 .nav a:hover,
@@ -43,26 +51,121 @@
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #0061bf; /* Underline color */
+  background-color: #0061bf;
   transition: width 0.3s ease;
 }
 
 .nav a:hover::after,
 .nav .active::after {
-  width: 100%; /* Expand underline on hover or when active */
+  width: 100%;
 }
 
-.demo-btn .get-demo-btn {
+.mobile-demo-btn {
+  display: none; /* Hide on larger screens */
   text-decoration: none;
   background-color: #0061bf;
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 5px;
-  font-weight: bold; /* Make the button text bold */
-  font-family: 'Aliotext', sans-serif; /* Ensure Aliotext font is applied */
+  font-weight: bold;
+  font-family: 'Aliotext', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+/* Desktop demo button */
+.demo-btn .get-demo-btn {
+  text-decoration: none;
+  background-color: #0061bf;
+  color: #ffffff;
+  padding: 10px 30px;
+  margin-right: 40px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: 'Aliotext', sans-serif;
   transition: background-color 0.3s ease;
 }
 
 .demo-btn .get-demo-btn:hover {
   background-color: #004aad;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.hamburger:hover .bar {
+  background-color: #0061bf;
+}
+
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 40px;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-demo-btn {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    margin-right: 80px;
+  }
+
+  /* Ensure hover effects are applied to links in the dropdown menu */
+  .nav a:hover,
+  .nav .active {
+    color: #0061bf;
+  }
+
+  .nav a:hover::after,
+  .nav .active::after {
+    width: 100%;
+  }
+
+  /* Ensure hover effects are applied to the "Get a Demo" button in the dropdown */
+  .mobile-demo-btn:hover {
+    background-color: #004aad;
+  }
+}
+
+/* Desktop-only styles */
+.desktop-only {
+  display: block; /* Show the button on larger screens */
 }

@@ -1,7 +1,7 @@
 /* Features Section */
 .features-section {
     padding: 60px 20px;
-    background-color: #f9f9f9;
+    background-color: white;
     text-align: center;
     font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
     margin-top: -50px;
@@ -105,3 +105,5 @@
   .features-pagination .dot.active {
     background: #0066ff;
   }
+
+  
