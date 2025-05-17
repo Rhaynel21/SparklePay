@@ -30,9 +30,9 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Get Help</h4>
           <ul>
-            <li><a aria-label="Contact Us">Contact Us</a></li>
-            <li><a aria-label="Latest Articles">Latest Articles</a></li>
-            <li><a aria-label="FAQ">FAQ</a></li>
+            <li aria-label="Contact Us">Contact Us</li>
+            <li aria-label="Latest Articles">Latest Articles</li>
+            <li aria-label="FAQ">FAQ</li>
           </ul>
         </div>
 
@@ -40,11 +40,11 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Programs</h4>
           <ul>
-            <li><a aria-label="Art & Design">Art & Design</a></li>
-            <li><a aria-label="Business">Business</a></li>
-            <li><a aria-label="IT & Software">IT & Software</a></li>
-            <li><a aria-label="Languages">Languages</a></li>
-            <li><a aria-label="Programming">Programming</a></li>
+            <li aria-label="Art & Design">Art & Design</li>
+            <li aria-label="Business">Business</li>
+            <li aria-label="IT & Software">IT & Software</li>
+            <li aria-label="Languages">Languages</li>
+            <li aria-label="Programming">Programming</li>
           </ul>
         </div>
 
@@ -52,10 +52,10 @@ const Footer = () => {
         <div className="footer-column">
         <h4>Legal</h4>
           <ul>
-            <li><a aria-label="Terms">Terms</a></li>
-            <li><a aria-label="Privacy">Privacy</a></li>
-            <li><a aria-label="Cookies">Cookies</a></li>
-            <li><a aria-label="Contact">Contact</a></li>
+            <li aria-label="Terms">Terms</li>
+            <li aria-label="Privacy">Privacy</li>
+            <li aria-label="Cookies">Cookies</li>
+            <li aria-label="Contact">Contact</li>
           </ul>
           
           <div className="social-icons">
