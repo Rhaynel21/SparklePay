@@ -113,12 +113,12 @@ export default function PosFeatures() {
         <div className="core-features">
           {features.map((item, idx) => (
             <div className="core-card" key={idx}>
-  <div className="core-header">
-    <div className="core-icon">{item.icon}</div>
-    <h3>{item.title}</h3>
-  </div>
-  <p>{item.desc}</p>
-</div>
+                <div className="core-header">
+                    <div className="core-icon">{item.icon}</div>
+                    <h3>{item.title}</h3>
+                    </div>
+                    <p>{item.desc}</p>
+            </div>
 
           ))}
         </div>

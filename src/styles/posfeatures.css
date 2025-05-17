@@ -293,3 +293,79 @@
   color: #444;
   line-height: 1.6;
 }
+
+@media (max-width: 1024px) {
+  .posfeatures-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 4vw;
+  }
+
+  .hero-left {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .dashboard-img {
+    margin: 40px 0 0 0;
+    max-width: 100%;
+  }
+
+  .access-content,
+  .sales-content {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .access-cards,
+  .sales-cards {
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .access-img,
+  .sales-img {
+    margin: 0 auto;
+  }
+
+  .access-card,
+  .sales-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .core-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-left h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-left p,
+  .access-card p,
+  .sales-card p {
+    font-size: 1rem;
+  }
+
+  .access-card,
+  .sales-card,
+  .core-card {
+    padding: 20px;
+  }
+
+  .core-card h3 {
+    font-size: 16px;
+  }
+
+  .core-card p {
+    font-size: 14px;
+  }
+}

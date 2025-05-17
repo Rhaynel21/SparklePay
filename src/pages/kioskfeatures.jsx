@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/kioskfeatures.css';
-import heroImg from '../assets/kiosk.png';
+import heroImg from '../assets/pos4.png';
 import {
   FaMoneyBillWave,
   FaCoins,
@@ -64,13 +64,14 @@ const features = [
 // ✅ Named export
 export function SelfCheckout() {
   return (
-    <div className="posfeatures-page">
+    <div className="kioskfeatures-page">
       {/* Hero Section */}
-      <section className="posfeatures-hero">
+      <section className="kioskfeatures-hero">
         <div className="hero-left">
-          <h1>Sparkle POS</h1>
+          <h2>Sparkle Pay</h2>
           <p>
-            Sparkle POS is designed to keep you moving. It’s fast, intuitive, and built to speed up service, simplify checkout, and keep your lines short.
+            Sparkle POS is designed to make checkout seemless. It's fast, easy to use and built to streamline orders,
+            reduce wait times, and enhance customer satisfaction.
           </p>
           <a href="#features" className="hero-btn">Get Started</a>
         </div>
@@ -79,21 +80,21 @@ export function SelfCheckout() {
         </div>
       </section>
 
-      {/* Self-Checkout Section */}
       <section className="self-checkout-section">
-        <h2>Self-Checkout Machine</h2>
-        <div className="checkout-grid">
-          {features.map((item, index) => (
-            <div className="checkout-card" key={index}>
-              <div className="icon">{item.icon}</div>
-              <div className="text">
-                <h4>{item.title}</h4>
-                <p>{item.desc}</p>
-              </div>
-            </div>
-          ))}
+  <h2>Self Checkout Features</h2>
+  <div className="checkout-grid">
+    {features.map((item, idx) => (
+      <div className="checkout-card" key={idx}>
+        <div className="icon">{item.icon}</div>
+        <div className="text">
+          <h4>{item.title}</h4>
+          <p>{item.desc}</p>
         </div>
-      </section>
+      </div>
+    ))}
+  </div>
+</section>
+
     </div>
   );
 }
