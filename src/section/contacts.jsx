@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import '../styles/contacts.css';
 import mascotImg from '../assets/cow1.png';
 import axios from 'axios';
@@ -6,6 +7,7 @@ import axios from 'axios';
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
+  const location = useLocation();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -31,8 +33,14 @@ const Contact = () => {
     }
   };
 
+  // Add extra top space only on /contact page to avoid header overlap
+  const isContactPage = location.pathname === '/contact';
+
   return (
-    <section className="contact-section">
+    <section
+      className="contact-section"
+      style={isContactPage ? { marginTop: '100px' } : {}}
+    >
       <div className="contact-container">
         <h3 className="contact-title">Contact Us</h3>
 

@@ -1,0 +1,218 @@
+.posfeatures-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 5vw;
+  min-height: 500px;
+  overflow: hidden;
+  gap: 48px;
+  background-image: url('../assets/bg2.png');
+  background-size: cover;
+}
+
+.hero-left {
+  max-width: 480px;
+  z-index: 2;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111;
+  font-family: 'Fredoka', sans-serif; /* Choose similar rounded font */
+}
+
+.hero-left p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 28px;
+  color: #333;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: #0091ff;
+  color: white;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 32px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.hero-btn:hover {
+  background: #0076d1;
+}
+
+.hero-right {
+  position: relative;
+  flex-shrink: 0;
+  width: 550px;
+  max-width: 48vw;
+}
+
+.dashboard-img {
+  width: 100%;
+  max-width: 540px;
+  transform: rotate(-1.5deg);
+  z-index: 1;
+  position: relative;
+}
+
+/* Account Access Control */
+.posfeatures-section {
+  padding: 80px 5vw;
+  background: #f5f5f5;
+}
+
+.posfeatures-section h2 {
+  font-size: 2.5rem;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.access-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.access-cards {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.access-card {
+  background-color: white;
+  padding: 24px 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  max-width: 520px;
+}
+
+.access-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.access-card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.access-img {
+  flex: 1;
+  max-width: 480px;
+  width: 100%;
+}
+
+/* Sales Reports & Inventory */
+.sales-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 2rem;
+}
+
+.sales-img {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  
+}
+
+.sales-cards {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sales-card {
+  background-color: white;
+  padding: 24px 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  max-width: 520px;
+}
+
+.sales-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.sales-card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.core-management-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #fdfdfd;
+  font-family: 'Inter', sans-serif;
+}
+
+.core-management-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+.core-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.core-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  padding: 28px 24px;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.core-card:hover {
+  transform: translateY(-4px);
+}
+
+.core-icon {
+  font-size: 30px;
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.core-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.core-card p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}

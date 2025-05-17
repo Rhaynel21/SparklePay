@@ -9,6 +9,10 @@ import FeaturesSection from './section/features';
 import SharedLayout from './components/sharedbackground'; 
 import About from './pages/aboutus';
 
+// Import your POS and Kiosk features pages
+import PosFeatures from './pages/posfeatures';
+import { SelfCheckout } from './pages/kioskfeatures';
+
 import './App.css';
 
 function App() {
@@ -21,22 +25,44 @@ function App() {
         {/* About Us Page */}
         <Route path="/aboutus" element={<About />} />
 
+        {/* Contact Page (only Contact section) */}
+        <Route path="/contact" element={
+          <>
+            <Header />
+            <Contact />
+            <Footer />
+          </>
+        } />
+
+        {/* POS Features Page */}
+        <Route path="/posfeatures" element={
+          <>
+            <Header />
+            <PosFeatures />
+            <Footer />
+          </>
+        } />
+
+        {/* Kiosk Features Page */}
+        <Route path="/kioskfeatures" element={
+          <>
+            <Header />
+            <SelfCheckout />
+            <Footer />
+          </>
+        } />
+
         {/* Main Website Layout */}
         <Route
           path="/"
           element={
             <>
               <Header />
-
-              {/* Shared Background Section (Home + Products) */}
               <div className="App">
                 <SharedLayout />
               </div>
-
-              {/* Additional Sections */}
               <FeaturesSection />
               <Contact />
-
               <Footer />
             </>
           }

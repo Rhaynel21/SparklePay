@@ -60,6 +60,116 @@
   width: 100%;
 }
 
+/* Features Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  color: #333333;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+  cursor: pointer;
+  transition: color 0.2s;
+  position: relative;
+  padding-bottom: 5px;
+  font-family: 'Aliotext', sans-serif;
+}
+
+.features-label {
+  font-family: 'Aliotext', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.dropdown-arrow {
+  display: flex;
+  align-items: center;
+  margin-left: 0.1em;
+  transition: filter 0.2s;
+}
+
+.dropdown-arrow svg {
+  display: block;
+  width: 15px;
+  height: 16px;
+}
+
+.dropdown-toggle:hover,
+.dropdown.open .dropdown-toggle,
+.dropdown-toggle.active {
+  color: #0061bf;
+}
+
+.dropdown-arrow svg polyline {
+  stroke: #333333;
+  transition: stroke 0.2s;
+}
+.dropdown-toggle:hover .dropdown-arrow polyline,
+.dropdown.open .dropdown-arrow polyline,
+.dropdown-toggle.active .dropdown-arrow polyline {
+  stroke: #0061bf;
+  filter: brightness(1.2);
+}
+
+.dropdown-toggle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0061bf;
+  transition: width 0.3s ease;
+}
+
+.dropdown-toggle:hover::after,
+.dropdown.open .dropdown-toggle::after,
+.dropdown-toggle.active::after {
+  width: 100%;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: #fff;
+  min-width: 140px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+  border-radius: 6px;
+  padding: 0.5rem 0;
+  animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.dropdown-item {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  color: #222;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-item:hover {
+  background: #f3f7ff;
+  color: #0747a6;
+}
+
 .mobile-demo-btn {
   display: none; /* Hide on larger screens */
   text-decoration: none;
@@ -86,7 +196,7 @@
 }
 
 .demo-btn .get-demo-btn:hover {
-  background-color: #004aad;
+  background-color: #01b6ff;
 }
 
 /* Hamburger icon */
@@ -108,10 +218,6 @@
 .hamburger:hover .bar {
   background-color: #0061bf;
 }
-
-
-
-
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -148,7 +254,6 @@
     margin-right: 80px;
   }
 
-  /* Ensure hover effects are applied to links in the dropdown menu */
   .nav a:hover,
   .nav .active {
     color: #0061bf;
@@ -159,9 +264,32 @@
     width: 100%;
   }
 
-  /* Ensure hover effects are applied to the "Get a Demo" button in the dropdown */
   .mobile-demo-btn:hover {
     background-color: #004aad;
+  }
+
+  /* Mobile dropdown menu: static position, full width */
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    min-width: 100%;
+    border-radius: 0;
+    padding: 0;
+    background: #fff;
+    animation: none;
+  }
+  .dropdown {
+    width: 100%;
+  }
+  .dropdown-toggle {
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    border-radius: 0;
+  }
+  .dropdown-item {
+    padding-left: 2rem;
   }
 }
 

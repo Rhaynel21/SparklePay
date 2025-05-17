@@ -1,6 +1,7 @@
 .pricing-section {
     text-align: center;
     padding: 10px 20px 60px; /* Added bottom padding for spacing */
+    margin-top: 90px;
     background: #fff;
     font-family: 'Inter', sans-serif; /* Apply Inter font globally to the pricing section */
     
@@ -34,7 +35,8 @@
     margin: 0 5px;
     border-radius: 5px;
     cursor: pointer;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 800;
     font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
 }
 
@@ -56,6 +58,7 @@
     border-radius: 10px;
     padding: 10px 30px; /* Adjusted padding for all cards */
     width: 260px;
+    background:#d3d2d2;
     text-align: left;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: 0.3s;

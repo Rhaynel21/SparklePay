@@ -1,8 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/home.css';
 import selfCheckoutImage from '../assets/pos1.png';
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="home-section">
       <div className="home-content">
@@ -18,8 +21,18 @@ const Home = () => {
             Sparkle up your checkout with fast, secure, and efficient POS and Self-Checkout solutions powered by cutting-edge technology. Effortless payments, real-time inventory, and seamless operations make every sale smarter, faster, and more secure with Sparkle!
           </p>
           <div className="home-buttons">
-            <a href="#demo" className="btn primary">Get a Demo</a>
-            <a href="#learn-more" className="btn secondary">Learn More</a>
+            <button
+              className="btn primary"
+              onClick={() => navigate('/contact')}
+            >
+              Get a Demo
+            </button>
+            <button
+              className="btn secondary"
+              onClick={() => navigate('/allfeatures')}
+            >
+              Learn More
+            </button>
           </div>
         </div>
 

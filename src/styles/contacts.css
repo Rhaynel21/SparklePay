@@ -53,14 +53,14 @@
 }
 
 .contact-description {
-  font-size: 16px;
+  font-size: 18px;
   color: #555;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
 .mascot-img {
-  width: 200px;
+  width: 250px;
   height: auto;
   margin-top: 20px;
 }
@@ -90,7 +90,7 @@
 }
 
 .form-label {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
   color: #333;
@@ -105,7 +105,7 @@
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 18px;
   font-family: 'Aliotext', sans-serif;
   box-sizing: border-box;
 }

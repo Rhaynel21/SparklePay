@@ -1,0 +1,115 @@
+.posfeatures-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 5vw;
+  min-height: 500px;
+  overflow: hidden;
+  gap: 48px;
+  background-image: url('../assets/bg2.png');
+  background-size: cover;
+}
+
+.hero-left {
+  max-width: 480px;
+  z-index: 2;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111;
+  font-family: 'Fredoka', sans-serif; /* Choose similar rounded font */
+}
+
+.hero-left p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 28px;
+  color: #333;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: #0091ff;
+  color: white;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 32px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.hero-btn:hover {
+  background: #0076d1;
+}
+
+.hero-right {
+  position: relative;
+  flex-shrink: 0;
+  width: 550px;
+  max-width: 48vw;
+}
+
+.dashboard-img {
+  width: 100%;
+  max-width: 540px;
+  transform: rotate(-1.5deg);
+  z-index: 1;
+  position: relative;
+}
+
+.self-checkout-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.self-checkout-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.checkout-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: transform 0.2s ease;
+}
+
+.checkout-card:hover {
+  transform: translateY(-5px);
+}
+
+.checkout-card .icon {
+  font-size: 36px;
+  color: #ff79c6;
+  flex-shrink: 0;
+}
+
+.checkout-card .text h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.checkout-card .text p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}

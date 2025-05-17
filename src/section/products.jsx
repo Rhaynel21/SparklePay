@@ -46,10 +46,15 @@ const Products = () => {
                 </p>
               </>
             )}
-            <a href="#features" className="btn primary">
+            <div className="btn primary">
+              <button
+              onClick={() => navigate('..pages/allfeatures')}
+            >
               See All Features
-            </a>
+              </button>
           </div>
+
+      </div>
 
           {/* Image Section */}
           <div className="image">
