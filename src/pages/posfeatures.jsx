@@ -5,6 +5,7 @@ import accessImg from '../assets/login.png';      // Account Access Control sect
 import salesImg from '../assets/reports.png';     // Sales Reports section image
 import menuImg from '../assets/posfeatures.png';  // Core Management Features section image
 import { FaUsersCog, FaUtensils, FaChartLine } from 'react-icons/fa';
+import { FaUserPlus, FaSignInAlt, FaChartBar, FaBoxes} from 'react-icons/fa';
 
 const features = [
   {
@@ -30,7 +31,7 @@ export default function PosFeatures() {
       {/* Hero Section */}
       <section className="posfeatures-hero">
         <div className="hero-left">
-          <h1>Sparkle Pos</h1>
+          <h2>Sparkle POS</h2>
           <p>
             Sparkle POS is designed to keep you moving. It’s fast, intuitive, and built to speed up service, simplify checkout, and keep your lines short.
           </p>
@@ -42,19 +43,25 @@ export default function PosFeatures() {
       </section>
 
       {/* Account Access Control */}
-      <section className="posfeatures-section">
+      <section className="posfeatures-section2">
         <h2>Account Access Control</h2>
         <div className="access-content">
           <div className="access-cards">
             <div className="access-card">
-              <h3>Registration</h3>
+              <div className="access-icon-title">
+                    <FaUserPlus />
+                    <h3>Registration</h3>
+              </div>
               <p>
                 Customers and operators can create accounts by providing basic information such as name, email, phone number, and password. This ensures personalized and secure access.
               </p>
-            </div>
+              </div>
             <div className="access-card">
-              <h3>Sign In/Out</h3>
-              <p>
+                <div className="access-icon-title">
+                    <FaSignInAlt />
+                    <h3>Sign In/Out</h3>
+                </div>
+                <p>
                 Authorized users can securely access their accounts using their registered credentials. Ensures secure termination of sessions to protect data privacy.
               </p>
             </div>
@@ -70,20 +77,35 @@ export default function PosFeatures() {
           <img src={salesImg} alt="Sales and Inventory" className="sales-img" />
           <div className="sales-cards">
             <div className="sales-card">
-              <h3>Sales Reporting</h3>
-              <p>
-                Track transactions and analyze sales trends with detailed reports. Get insights into revenue, peak hours, and top-selling items to make data-driven decisions.
-              </p>
+                <div className="access-icon-title">
+                    <FaChartBar />
+                    <h3>Sales Dashboard</h3>
+                </div>
+                <p>
+                    Track transactions and analyze sales trends with detailed reports. Get insights into revenue, peak hours, and top-selling items to make data-driven decisions.
+                </p>
             </div>
             <div className="sales-card">
-              <h3>Inventory Management</h3>
+                <div className="access-icon-title">
+                        <FaBoxes />
+                        <h3>Inventory Tracking</h3>
+                </div>
               <p>
                 Stay in control of stock levels by monitoring available items in real-time. Receive alerts for low inventory and streamline restocking with ease.
               </p>
             </div>
           </div>
+
         </div>
       </section>
+
+        {/* Menu Management */}
+        <section className="posfeatures-section">
+        <div className="menu-content">
+            <img src={menuImg} alt="Menu Management" className="menu-img" />
+        </div>
+        </section>
+        
 
       {/* Core Management Features */}
       <section className="posfeatures-section">
@@ -91,13 +113,16 @@ export default function PosFeatures() {
         <div className="core-features">
           {features.map((item, idx) => (
             <div className="core-card" key={idx}>
-              <div className="core-icon">{item.icon}</div>
-              <h3>{item.title}</h3>
-              <p>{item.desc}</p>
-            </div>
+  <div className="core-header">
+    <div className="core-icon">{item.icon}</div>
+    <h3>{item.title}</h3>
+  </div>
+  <p>{item.desc}</p>
+</div>
+
           ))}
         </div>
-        <img src={menuImg} alt="Core Management Features" className="core-img" />
+        
       </section>
     </div>
   );

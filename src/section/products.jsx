@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/products.css';
 import posImage from '../assets/mockup2.png';
 import selfCheckoutImage from '../assets/pos2.png';
 
 const Products = () => {
   const [activeTab, setActiveTab] = useState('selfcheckout');
+  const navigate = useNavigate();
 
   return (
     <section className="products-section" id="products">
@@ -46,15 +48,10 @@ const Products = () => {
                 </p>
               </>
             )}
-            <div className="btn primary">
-              <button
-              onClick={() => navigate('..pages/allfeatures')}
-            >
+            <button className="btn primary" onClick={() => navigate('/posfeatures')}>
               See All Features
-              </button>
+            </button>
           </div>
-
-      </div>
 
           {/* Image Section */}
           <div className="image">
