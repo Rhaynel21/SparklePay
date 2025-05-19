@@ -29,7 +29,9 @@ const Home = () => {
             </button>
             <button
               className="btn secondary"
-              onClick={() => navigate('/allfeatures')}
+              onClick={() => {
+                document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               Learn More
             </button>
