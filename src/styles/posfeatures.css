@@ -68,6 +68,10 @@
   margin-right: 100px;
 }
 
+#posfeatures-section2 {
+  scroll-margin-top: 50px;
+}
+
 /* Account Access Control */
 .posfeatures-section2 {
   padding: 80px 5vw;
@@ -126,6 +130,10 @@
   font-size: 1.2rem;
   color: #444;
   line-height: 1.3;
+}
+
+.access-card:hover {
+   transform: zoom-in;
 }
 
 .access-icon {
@@ -201,6 +209,10 @@
   width: 400px;
   height: 170px;
   margin-bottom: 10px;
+}
+
+.sales-card:hover {
+   transform: translateY(-4px);
 }
 
 .sales-card h3 {
@@ -345,7 +357,9 @@
 }
 
 @media (max-width: 600px) {
+  
   .hero-left h2 {
+    
     font-size: 2.5rem;
   }
 

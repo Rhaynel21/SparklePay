@@ -3,8 +3,9 @@ import '../styles/aboutus.css';
 import aboutImg1 from '../assets/about3.png';
 import featuresImg from '../assets/bulb2.png';
 import { FaArrowRight } from 'react-icons/fa';
-import Header from '../components/header'; // Import Header
-import Footer from '../components/footer'; // Import Footer
+import Header from '../components/header';
+import Footer from '../components/footer';
+import { useNavigate } from 'react-router-dom';
 
 const benefits = [
   { id: 1, title: 'Consistency', desc: 'Our solutions are reliable and affordable, with consistent performance to help you scale.' },
@@ -16,13 +17,14 @@ const benefits = [
 ];
 
 const About = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="about-page">
-      <Header /> {/* Include Header */}
+      <Header />
 
       {/* About Section */}
       <section className="about-section">
-        {/* Text left (big screen), reordered on small */}
         <div className="about-text">
           <div className="about-heading">
             <h2><span>About Us</span></h2>
@@ -37,11 +39,15 @@ const About = () => {
             <p>
               Whether you're a business owner or a company looking to innovate, Sparkle is here to support your journey.
             </p>
-            <a href="#join" className="about-cta">Join Us <FaArrowRight /></a>
+            <button
+              className="about-cta"
+              onClick={() => navigate('/contact')}
+            >
+              Join Us <FaArrowRight />
+            </button>
           </div>
         </div>
 
-        {/* Image right (big screen), 3rd item on small */}
         <div className="about-images">
           <img src={aboutImg1} alt="Office" />
         </div>
@@ -61,7 +67,12 @@ const About = () => {
             At SparklePay, our main goal is to create affordable technological breakthroughs that drive business growth.
             With intuitive software and smooth experiences, we make complex tasks simple so you can focus on what matters.
           </p>
-          <a href="#learn-more" className="about-cta">Learn More <FaArrowRight /></a>
+          <button
+            className="about-cta"
+            onClick={() => navigate('/')}
+          >
+            Learn More <FaArrowRight />
+          </button>
         </div>
       </section>
 
@@ -79,13 +90,12 @@ const About = () => {
               <div className="benefit-number">{`0${benefit.id}`}</div>
               <h4>{benefit.title}</h4>
               <p>{benefit.desc}</p>
-              <a href="#learn-more">Learn More</a>
             </div>
           ))}
         </div>
       </section>
 
-      <Footer /> {/* Include Footer */}
+      <Footer />
     </div>
   );
 };

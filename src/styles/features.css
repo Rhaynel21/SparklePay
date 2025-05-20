@@ -44,11 +44,8 @@
   .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .feature-card.active {
     border-color: #0066ff; /* Change border color for active card */
-    background-color: #e6f7ff; /* Change background color for active card */
+    background-color: #e6f7ff; 
   }
   
   .feature-icon-title {
@@ -56,6 +53,7 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
+    
   }
   
   .feature-icon {
@@ -65,8 +63,9 @@
   
   .feature-card h3 {
     font-size: 2rem;
-    color: #333;
+    color: #0066ff;
     margin: 0;
+    margin-top: -10px;
   }
   
   .feature-card p {
@@ -75,35 +74,4 @@
     margin-bottom: 15px;
   }
   
-  .feature-card a {
-    font-size: 1.5rem;
-    color: #0066ff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .feature-card a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Pagination Dots */
-  .features-pagination {
-    margin-top: 20px;
-  }
-  
-  .features-pagination .dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    background: #ddd;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .features-pagination .dot.active {
-    background: #0066ff;
-  }
-
   

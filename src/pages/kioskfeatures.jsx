@@ -73,27 +73,34 @@ export function SelfCheckout() {
             Sparkle POS is designed to make checkout seemless. It's fast, easy to use and built to streamline orders,
             reduce wait times, and enhance customer satisfaction.
           </p>
-          <a href="#features" className="hero-btn">Get Started</a>
+          <button
+              className="btn secondary"
+              onClick={() => {
+                document.getElementById('self-checkout')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Get Started
+            </button>
         </div>
         <div className="hero-right">
           <img src={heroImg} alt="POS Dashboard" className="dashboard-img" />
         </div>
       </section>
 
-      <section className="self-checkout-section">
-  <h2>Self Checkout Features</h2>
-  <div className="checkout-grid">
-    {features.map((item, idx) => (
-      <div className="checkout-card" key={idx}>
-        <div className="icon">{item.icon}</div>
-        <div className="text">
-          <h4>{item.title}</h4>
-          <p>{item.desc}</p>
+      <section className="self-checkout-section" id="self-checkout">
+        <h2>Self Checkout Features</h2>
+        <div className="checkout-grid">
+          {features.map((item, idx) => (
+            <div className="checkout-card" key={idx}>
+              <div className="icon">{item.icon}</div>
+              <div className="text">
+                <h4>{item.title}</h4>
+                <p>{item.desc}</p>
+              </div>
+            </div>
+          ))}
         </div>
-      </div>
-    ))}
-  </div>
-</section>
+      </section>
 
     </div>
   );

@@ -62,7 +62,7 @@ export default function Header() {
               className="dropdown-item"
               onClick={() => handleFeatureClick('/kioskfeatures')}
             >
-              Kiosk
+              Self-Checkout Machine
             </button>
             </div>
           )}

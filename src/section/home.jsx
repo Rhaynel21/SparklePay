@@ -7,7 +7,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="home-section">
+    <section className="home-section" id="home">
       <div className="home-content">
         {/* Text Content */}
         <div className="home-text">
@@ -30,7 +30,7 @@ const Home = () => {
             <button
               className="btn secondary"
               onClick={() => {
-                document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('products-tabs').scrollIntoView({ behavior: 'smooth' });
               }}
             >
               Learn More

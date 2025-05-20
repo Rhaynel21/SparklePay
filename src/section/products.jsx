@@ -9,9 +9,9 @@ const Products = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="products-section" id="products">
+    <section className="products-section">
       {/* Tabs Header */}
-      <div className="tabs-header">
+      <div className="tabs-header" id="products-tabs">
         <button
           className={activeTab === 'pos' ? 'tab active' : 'tab'}
           onClick={() => setActiveTab('pos')}
@@ -48,7 +48,14 @@ const Products = () => {
                 </p>
               </>
             )}
-            <button className="btn primary" onClick={() => navigate('/posfeatures')}>
+            <button className="btn primary" onClick={() => {
+              if (activeTab === 'pos') {
+                navigate('/posfeatures');
+              } else {
+                navigate('/kioskfeatures');
+              }
+            }}
+            >
               See All Features
             </button>
           </div>

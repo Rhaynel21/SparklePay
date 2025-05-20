@@ -122,6 +122,10 @@
   line-height: 1.5;
 }
 
+  #self-checkout {
+  scroll-margin-top: 80x;
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .kioskfeatures-hero {

@@ -35,7 +35,14 @@ export default function PosFeatures() {
           <p>
             Sparkle POS is designed to keep you moving. It’s fast, intuitive, and built to speed up service, simplify checkout, and keep your lines short.
           </p>
-          <a href="#features" className="hero-btn">Get Started</a>
+          <button
+              className="btn secondary"
+              onClick={() => {
+                document.getElementById('posfeatures-section2')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Get Started
+            </button>
         </div>
         <div className="hero-right">
           <img src={heroImg} alt="POS Dashboard" className="dashboard-img" />
@@ -43,7 +50,7 @@ export default function PosFeatures() {
       </section>
 
       {/* Account Access Control */}
-      <section className="posfeatures-section2">
+      <section className="posfeatures-section2" id="posfeatures-section2">
         <h2>Account Access Control</h2>
         <div className="access-content">
           <div className="access-cards">

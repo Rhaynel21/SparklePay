@@ -47,18 +47,7 @@ const Features = () => {
               <h3>{feature.title}</h3>
             </div>
             <p>{feature.description}</p>
-            <a href="#learn">Learn More</a>
           </div>
-        ))}
-      </div>
-
-      <div className="features-pagination">
-        {features.map((_, index) => (
-          <span
-            key={index}
-            className={`dot ${index === activeIndex ? 'active' : ''}`}
-            onClick={() => setActiveIndex(index)}
-          ></span>
         ))}
       </div>
     </section>
