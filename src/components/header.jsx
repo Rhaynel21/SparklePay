@@ -10,10 +10,12 @@ export default function Header() {
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
+  // Always scroll to top after navigation
   const handleFeatureClick = (path) => {
     setFeaturesOpen(false);
     setMenuOpen(false);
     navigate(path);
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -25,7 +27,10 @@ export default function Header() {
       <nav className={`nav ${menuOpen ? 'open' : ''}`}>
         <NavLink
           to="/"
-          onClick={() => setMenuOpen(false)}
+          onClick={() => {
+            setMenuOpen(false);
+            window.scrollTo(0, 0);
+          }}
           className={({ isActive }) => (isActive ? 'active' : '')}
         >
           Home
@@ -33,44 +38,47 @@ export default function Header() {
 
         {/* Features Dropdown */}
         <div
-        className={`dropdown ${featuresOpen ? 'open' : ''}`}
-        onMouseEnter={() => { if (window.innerWidth > 900) setFeaturesOpen(true); }}
-        onMouseLeave={() => { if (window.innerWidth > 900) setFeaturesOpen(false); }}
+          className={`dropdown ${featuresOpen ? 'open' : ''}`}
+          onMouseEnter={() => { if (window.innerWidth > 900) setFeaturesOpen(true); }}
+          onMouseLeave={() => { if (window.innerWidth > 900) setFeaturesOpen(false); }}
         >
           <button
-          className={`dropdown-toggle nav-link${featuresOpen ? ' active' : ''}`}
-          onClick={() => setFeaturesOpen((open) => !open)}
-          type="button"
-        >
-          <span className="features-label">Features</span>
-          <span className="dropdown-arrow">
-            <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <polyline points="2,4 11,13 20,4" stroke={featuresOpen ? "#0061bf" : "#222"} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-            </svg>
-          </span>
+            className={`dropdown-toggle nav-link${featuresOpen ? ' active' : ''}`}
+            onClick={() => setFeaturesOpen((open) => !open)}
+            type="button"
+          >
+            <span className="features-label">Features</span>
+            <span className="dropdown-arrow">
+              <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="2,4 11,13 20,4" stroke={featuresOpen ? "#0061bf" : "#222"} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+              </svg>
+            </span>
           </button>
           
           {featuresOpen && (
             <div className="dropdown-menu">
               <button
-              className="dropdown-item"
-              onClick={() => handleFeatureClick('/posfeatures')}
-            >
-              POS
-            </button>
-            <button
-              className="dropdown-item"
-              onClick={() => handleFeatureClick('/kioskfeatures')}
-            >
-              Self-Checkout Machine
-            </button>
+                className="dropdown-item"
+                onClick={() => handleFeatureClick('/posfeatures')}
+              >
+                POS
+              </button>
+              <button
+                className="dropdown-item"
+                onClick={() => handleFeatureClick('/kioskfeatures')}
+              >
+                Self-Checkout Machine
+              </button>
             </div>
           )}
         </div>
 
         <NavLink
           to="/pricing"
-          onClick={() => setMenuOpen(false)}
+          onClick={() => {
+            setMenuOpen(false);
+            window.scrollTo(0, 0);
+          }}
           className={({ isActive }) => (isActive ? 'active' : '')}
         >
           Pricing
@@ -78,7 +86,10 @@ export default function Header() {
 
         <NavLink
           to="/contact"
-          onClick={() => setMenuOpen(false)}
+          onClick={() => {
+            setMenuOpen(false);
+            window.scrollTo(0, 0);
+          }}
           className={({ isActive }) => (isActive ? 'active' : '')}
         >
           Contact
@@ -86,7 +97,10 @@ export default function Header() {
 
         <NavLink
           to="/aboutus"
-          onClick={() => setMenuOpen(false)}
+          onClick={() => {
+            setMenuOpen(false);
+            window.scrollTo(0, 0);
+          }}
           className={({ isActive }) => (isActive ? 'active' : '')}
         >
           About Us
@@ -96,7 +110,10 @@ export default function Header() {
         <NavLink
           to="/contact"
           className="get-demo-btn mobile-demo-btn"
-          onClick={() => setMenuOpen(false)}
+          onClick={() => {
+            setMenuOpen(false);
+            window.scrollTo(0, 0);
+          }}
         >
           Get a Demo
         </NavLink>
@@ -107,6 +124,7 @@ export default function Header() {
         <NavLink
           to="/contact"
           className="get-demo-btn"
+          onClick={() => window.scrollTo(0, 0)}
         >
           Get a Demo
         </NavLink>

@@ -17,7 +17,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
-    margin-top: 100px;
+    margin-top: 80px;
     background-color: #fff;
   }
   
@@ -28,6 +28,7 @@
     flex-direction: column;
     gap: 20px;
   }
+
   
   .about-heading h2,
   .about-heading h3,
@@ -37,7 +38,7 @@
   }
   
   .about-heading h2 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: #ffc107;
     margin-bottom: 10px;
   }
@@ -46,6 +47,7 @@
     font-size: 2rem;
     color: #333;
     line-height: 1.4;
+    margin-top: -10px;
   }
   
   .about-heading strong {
@@ -53,10 +55,11 @@
   }
   
   .about-description p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #555;
     line-height: 1.6;
     margin-bottom: 20px;
+    margin-top: -20px;
   }
   
 .about-cta {
@@ -164,17 +167,19 @@
   
   .features-text h4 {
     color: #ffc107;
-    font-size: 1.2rem;
+    font-size: 4rem;
     margin-bottom: 10px;
+    margin-top: -140px;
   }
   
   .features-text h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 15px;
+    margin-top: -10px;
   }
   
   .features-text p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #555;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -217,25 +222,40 @@
     padding: 60px 20px;
     text-align: center;
     font-family: 'Aliotext', sans-serif;
+    margin-top: -120px;
   }
   
   .benefits-section h4 {
-    font-size: 1.2rem;
+    font-size: 4rem;
     color: #ffc107;
     margin-bottom: 10px;
   }
+
+  .benefits-section h5 {
+    font-size: 1.5rem;
+    color: #0066ff;
+    margin-bottom: 10px;
+    margin-top: -10px;
+  }
+
+  .benefits-section p {
+    font-size: 1.2rem;
+    
+  }
   
   .benefits-section h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 15px;
   }
   
   .benefits-subtext {
-    font-size: 1rem;
+    font-size: 1.3rem;
     max-width: 700px;
     margin: 0 auto 40px;
     color: #555;
   }
+
+
   
   /* Benefits Cards */
   .benefits-cards {
@@ -246,7 +266,16 @@
     margin: 0 auto;
   }
 
-  .benefit-card:hover,
+  .benefit-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  font-family: 'Aliotext', sans-serif;
+}
+
+.benefit-card:hover,
 .benefit-card:focus-within {
   transform: translateY(-6px) scale(1.03);
   z-index: 1;

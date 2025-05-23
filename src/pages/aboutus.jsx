@@ -32,7 +32,7 @@ const About = () => {
           </div>
           <div className="about-description">
             <p>
-              Sparkle is a world–class commerce platform dedicated to bringing flexible, friendly, and innovative technology to everyone.
+              Sparkle is a world-class commerce platform dedicated to bringing flexible, friendly, and innovative technology to everyone.
               Our mission is to provide tailored solutions that empower businesses of all sizes and types with a smarter, easier way
               to operate, innovate, and thrive.
             </p>
@@ -88,7 +88,7 @@ const About = () => {
           {benefits.map((benefit) => (
             <div key={benefit.id} className="benefit-card">
               <div className="benefit-number">{`0${benefit.id}`}</div>
-              <h4>{benefit.title}</h4>
+              <h5>{benefit.title}</h5>
               <p>{benefit.desc}</p>
             </div>
           ))}
