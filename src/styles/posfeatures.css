@@ -61,8 +61,9 @@
 
 .dashboard-img {
   width: 100%;
-  margin-top: 150px;
-  max-width: 480px;
+  margin-top: 120px !important;
+  max-width: 750px;
+  max-height: 550px;
   position: relative;
   z-index: 1;
   margin-right: 100px;
@@ -116,6 +117,7 @@
   width: 400px;
   height: 170px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
 }
 
 .access-card h3 {
@@ -133,7 +135,7 @@
 }
 
 .access-card:hover {
-   transform: zoom-in;
+   transform: translateY(-4px);
 }
 
 .access-icon {
@@ -209,6 +211,7 @@
   width: 400px;
   height: 170px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
 }
 
 .sales-card:hover {
@@ -270,7 +273,7 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
   padding: 28px 24px;
   text-align: left;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
   width: calc(33.333% - 20px);
   min-width: 280px;
   box-sizing: border-box;
@@ -306,36 +309,44 @@
   line-height: 1.6;
 }
 
+/* ------------------- Base Tweaks (remove rigid margins) ------------------- */
+.hero-left,
+.access-cards,
+.sales-cards,
+.sales-img,
+.access-img {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* ------------------- Tablet Optimization ------------------- */
 @media (max-width: 1024px) {
   .posfeatures-hero {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 60px 4vw;
+    gap: 32px;
+  }
+
+  .dashboard-img {
+    margin: 0 auto;
+    max-width: 100%;
   }
 
   .hero-left {
     margin: 0;
-    max-width: 100%;
-  }
-
-  .dashboard-img {
-    margin: 40px 0 0 0;
-    max-width: 100%;
+    text-align: center;
   }
 
   .access-content,
   .sales-content {
     flex-direction: column;
     align-items: center;
-    margin-left: 0;
-    margin-right: 0;
+    gap: 32px;
   }
 
   .access-cards,
   .sales-cards {
-    margin-left: 0;
-    margin-right: 0;
     align-items: center;
   }
 
@@ -347,39 +358,54 @@
   .access-card,
   .sales-card {
     width: 100%;
-    max-width: 400px;
+    max-width: 380px;
   }
 
   .core-card {
     width: 100%;
-    max-width: 400px;
+    max-width: 380px;
   }
 }
 
+/* ------------------- Mobile Optimization ------------------- */
 @media (max-width: 600px) {
-  
   .hero-left h2 {
-    
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .hero-left p,
   .access-card p,
-  .sales-card p {
+  .sales-card p,
+  .core-card p {
     font-size: 1rem;
   }
 
   .access-card,
   .sales-card,
   .core-card {
-    padding: 20px;
+    padding: 16px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-btn {
+    width: 100%;
+    text-align: center;
   }
 
   .core-card h3 {
-    font-size: 16px;
+    font-size: 1.2rem;
   }
 
   .core-card p {
-    font-size: 14px;
+    font-size: 0.95rem;
+  }
+
+  .core-features {
+    padding: 0 10px;
+  }
+
+  .dashboard-img {
+    margin-top: 30px;
   }
 }

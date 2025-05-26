@@ -1,203 +1,241 @@
-.kioskfeatures-hero {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px 5vw;
-  overflow: hidden;
-  gap: 48px;
-  background-image: url('../assets/bg2.png');
-  background-size: cover;
-  font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
-  
-}
-.hero-left {
-  max-width: 400px;
-  z-index: 2;
-  margin-left: 100px;
-}
-
-.hero-left h2 {
-  font-size: 4rem;
-  font-weight: 700;
-  margin-bottom: 18px;
-  font-family: 'Aliotext', sans-serif; /* Choose similar rounded font */
-  color: #111;
-}
-
-.hero-left p {
-  font-size: 1.3rem;
-  line-height: 1.7;
-  margin-bottom: 28px;
-  color: #222;
-}
-
-.hero-btn {
-  display: inline-block;
-  background: #0091ff;
-  color: white;
-  padding: 12px 28px;
-  font-size: 1rem;
-  border-radius: 32px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s;
-  border: none;
-  box-shadow: 0 4px 16px rgba(0,145,255,0.08);
-}
-
-.hero-btn:hover {
-  background: #0076d1;
-}
-
-.hero-right {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
-  min-width: 320px;
-}
-
-.dashboard-img {
-  width: 100%;
-  margin-top: 130px;
-  max-width: 750px;
-  position: relative;
-  z-index: 1;
-  margin-right: 20px;
-}
-
-.self-checkout-section {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: auto;
-  font-family: 'Aliotext', sans-serif;
-}
-
-.self-checkout-section h2 {
-  font-size: 35px;
-  font-weight: 700;
-  margin-bottom: 40px;
-}
-
-.checkout-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-  gap: 20px;
-}
-
-.checkout-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  transition: transform 0.2s ease;
-  height: 130px;
-}
-
-.checkout-card:hover {
-  transform: translateY(-5px);
-}
-
-.checkout-card .icon {
-  font-size: 36px;
-  color: #0066ff;;
-  flex-shrink: 0;
-}
-
-.checkout-card .text h4 {
-  font-size: 25px;
-  font-weight: 700;
-  margin-bottom: 6px;
-  color: #0066ff;
-}
-
-.checkout-card .text p {
-  font-size: 18px;
-  color: #444;
-  line-height: 1.5;
-}
-
-  #self-checkout {
-  scroll-margin-top: 80x;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
   .kioskfeatures-hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 60px 40px;
-    gap: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 5vw;
+    overflow: hidden;
+    gap: 48px;
+    background-image: url('../assets/bg2.png');
+    background-size: cover;
+    font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
+    
   }
-
   .hero-left {
-    margin: 0 auto;
-    max-width: 100%;
+    max-width: 400px;
+    z-index: 2;
+    margin-left: 50px;
   }
 
   .hero-left h2 {
-    font-size: 3rem;
-  }
-
-  .hero-right {
-    justify-content: center;
-    margin: 0;
-  }
-
-  .dashboard-img {
-    margin: 0 auto;
-    max-width: 420px;
-    margin-top: 60px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-left h2 {
-    font-size: 2.4rem;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    font-family: 'Aliotext', sans-serif; /* Choose similar rounded font */
+    color: #111;
   }
 
   .hero-left p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    margin-bottom: 28px;
+    color: #222;
+  }
+
+  .hero-btn {
+    display: inline-block;
+    background: #0091ff;
+    color: white;
+    padding: 12px 28px;
     font-size: 1rem;
+    border-radius: 32px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+    border: none;
+    box-shadow: 0 4px 16px rgba(0,145,255,0.08);
   }
 
-  .checkout-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .hero-btn:hover {
+    background: #0076d1;
   }
 
-  .checkout-card {
-    height: auto;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .checkout-card .icon {
-    font-size: 30px;
-  }
-
-  .checkout-card .text h4 {
-    font-size: 20px;
-  }
-
-  .checkout-card .text p {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-left h2 {
-    font-size: 2rem;
-  }
-
-  .checkout-grid {
-    grid-template-columns: 1fr;
+  .hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    min-width: 320px;
   }
 
   .dashboard-img {
-    max-width: 100%;
+    width: 100%;
+    margin-top: 150px !important;
+    max-width: 750px;
+    position: relative;
+    z-index: 1;
+    margin-right: 20px;
+    max-height: 550px;
   }
-}
+
+  .self-checkout-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Aliotext', sans-serif;
+  }
+
+  .self-checkout-section h2 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  .checkout-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .checkout-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    transition: transform 0.3s ease;
+    height: 130px;
+    width: 350px;
+  }
+
+  .checkout-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .checkout-card .icon {
+    font-size: 36px;
+    color: #0066ff;;
+    flex-shrink: 0;
+  }
+
+  .checkout-card .text h4 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #0066ff;
+  }
+
+  .checkout-card .text p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.5;
+    width: 300px;
+  }
+
+    #self-checkout {
+    scroll-margin-top: 80x;
+  }
+
+
+  @media (max-width: 1024px) {
+    .kioskfeatures-hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 60px 5vw;
+      gap: 32px;
+    }
+
+    .hero-left {
+      margin: 0 auto;
+      max-width: 90%;
+    }
+
+    .hero-left h2 {
+      font-size: 3rem;
+    }
+
+    .hero-right {
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    .dashboard-img {
+      margin-top: 40px;
+      max-width: 500px;
+      margin-right: 0;
+    }
+
+    .checkout-grid {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+
+    .checkout-card {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-left h2 {
+      font-size: 2.4rem;
+    }
+
+    .hero-left p {
+      font-size: 1rem;
+    }
+
+    .checkout-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .checkout-card {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .checkout-card .icon {
+      font-size: 28px;
+    }
+
+    .checkout-card .text h4 {
+      font-size: 20px;
+      margin-top: 0;
+    }
+
+    .checkout-card .text p {
+      font-size: 16px;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .kioskfeatures-hero {
+      padding: 40px 20px;
+    }
+
+    .hero-left h2 {
+      font-size: 1.8rem;
+    }
+
+    .hero-left p {
+      font-size: 0.95rem;
+    }
+
+    .hero-btn {
+      width: 100%;
+      padding: 12px 0;
+    }
+
+    .dashboard-img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .checkout-card {
+      padding: 16px;
+    }
+
+    .checkout-card .text h4 {
+      font-size: 18px;
+    }
+
+    .checkout-card .text p {
+      font-size: 15px;
+    }
+  }

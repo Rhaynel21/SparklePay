@@ -186,8 +186,8 @@
 /* Desktop demo button */
 .demo-btn .get-demo-btn {
   text-decoration: none;
-  background-color: #0061bf;
-  color: #ffffff;
+  background-color: #49cbff;
+  color: #000000;
   padding: 10px 30px;
   margin-right: 40px;
   border-radius: 5px;
@@ -197,7 +197,8 @@
 }
 
 .demo-btn .get-demo-btn:hover {
-  background-color: #01b6ff;
+  background-color: #0061bf;
+  color: rgb(255, 255, 255);
 }
 
 /* Hamburger icon */
@@ -232,27 +233,46 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 8px;
-    margin-right: 40px;
   }
 
   .nav.open {
     display: flex;
+    width: 200px;
   }
 
   .desktop-only {
     display: none !important;
-  }
+  } 
 
   .mobile-demo-btn {
-    display: inline-block;
+    display: flex;
     margin-top: 10px;
+    background-color: #49cbff;
+    color: #000000 !important;
+    align-items: center;
+    justify-content: center;
+    }
+  .demo-btn .get-demo-btn:hover {
+    background-color: #0061bf;
+    color: rgb(255, 252, 252) !important;
   }
 
+.mobile-demo-btn:hover {
+    background-color: #004aad;
+    color: #fff !important; /* Force white text on hover */
+  }
   .hamburger {
     display: flex;
     position: absolute;
     right: 20px;
-    margin-right: 80px;
+    top: 40px; /* Align vertically with header content */
+    margin-right: 0; /* Remove excess margin */
+    z-index: 1100; /* Ensure it appears above dropdowns */
+  }
+
+.header {
+    justify-content: space-between;
+    padding-right: 60px; /* add space for hamburger */
   }
 
   .nav a:hover,
@@ -267,6 +287,7 @@
 
   .mobile-demo-btn:hover {
     background-color: #004aad;
+    color: #ffffff;
   }
 
   /* Mobile dropdown menu: static position, full width */
@@ -289,9 +310,7 @@
     padding: 1rem 0;
     border-radius: 0;
   }
-  .dropdown-item {
-    padding-left: 2rem;
-  }
+
 }
 
 /* Desktop-only styles */
