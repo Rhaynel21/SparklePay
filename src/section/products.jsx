@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/products.css';
-import posImage from '../assets/mockup2.png';
+import posImage from '../assets/pos-final1.png';
 import selfCheckoutImage from '../assets/pos2.png';
 
 const Products = () => {
