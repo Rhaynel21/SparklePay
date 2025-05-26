@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/home.css';
-import selfCheckoutImage from '../assets/pos1.png';
+import selfCheckoutImage from '../assets/pos-final.png';
 
 const Home = () => {
   const navigate = useNavigate();

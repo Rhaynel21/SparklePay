@@ -54,11 +54,11 @@
 }
 
 .card {
-    background: #f9f9f9;
+   
     border-radius: 10px;
     padding: 10px 30px; /* Adjusted padding for all cards */
     width: 260px;
-    background:#d3d2d2;
+    background: #f0f0f0;;
     text-align: left;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: 0.3s;

@@ -26,7 +26,7 @@
 }
 
 .hero-left p {
-  font-size: 1.08rem;
+  font-size: 1.3rem;
   line-height: 1.7;
   margin-bottom: 28px;
   color: #222;
@@ -62,10 +62,10 @@
 .dashboard-img {
   width: 100%;
   margin-top: 130px;
-  max-width: 550px;
+  max-width: 750px;
   position: relative;
   z-index: 1;
-  margin-right: 100px;
+  margin-right: 20px;
 }
 
 .self-checkout-section {

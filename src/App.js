@@ -8,8 +8,6 @@ import Contact from './section/contacts';
 import FeaturesSection from './section/features';
 import SharedLayout from './components/sharedbackground'; 
 import About from './pages/aboutus';
-
-// Import your POS and Kiosk features pages
 import PosFeatures from './pages/posfeatures';
 import { SelfCheckout } from './pages/kioskfeatures';
 
