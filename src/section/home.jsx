@@ -18,7 +18,7 @@ const Home = () => {
             Self-checkout made effortless. <span>POS made powerful</span>
           </h1>
           <p>
-            Sparkle up your checkout with fast, secure, and efficient POS and Self-Checkout solutions powered by cutting-edge technology. Effortless payments, real-time inventory, and seamless operations make every sale smarter, faster, and more secure with Sparkle!
+            Sparkle up your checkout with fast, secure, and efficient POS and Self-Checkout solutions powered by cutting-edge technology. Effortless payments, real-time inventory, and seamless operations make<br /> every sale smarter, faster, and more secure with Sparkle!
           </p>
           <div className="home-buttons">
             <button

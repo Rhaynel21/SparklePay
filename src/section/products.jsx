@@ -36,7 +36,7 @@ const Products = () => {
                 <h2>A POS that does it all <br /> for you.</h2>
                 <p>
                   From real-time sales insights to effortless inventory management, everything you
-                  need is at your fingertips.
+                  <br />need is at your fingertips.
                 </p>
               </>
             ) : ( 
