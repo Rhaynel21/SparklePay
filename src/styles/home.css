@@ -33,6 +33,7 @@
   
   .home-text h1 {
     font-size: 3.5rem;
+    width: 550px;
     line-height: 1.1;
     font-weight: bold;
     margin-top: 5px;
@@ -99,7 +100,7 @@
   /* Desktop image */
   .main-image {
     flex: 1;
-    max-width: 780px;
+    max-width: 630px;
     height: auto;
     margin-top: 90px;
   }
