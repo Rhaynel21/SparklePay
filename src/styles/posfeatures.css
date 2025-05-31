@@ -406,14 +406,17 @@
   }
 
   .access-card,
-  .sales-card,
-  .core-card {
+  .sales-card {
     padding: 16px;
     width: 100%;
     max-width: 100%;
     min-width: 200px;     
-    min-height: 200px;
+    min-height: 150px !important; /* Ensure cards have a minimum height */
     max-height: 410px;
+  }
+  .core-card{
+    min-height: 240px !important;
+    max-height: 240px !important;
   }
 
   .hero-btn {
