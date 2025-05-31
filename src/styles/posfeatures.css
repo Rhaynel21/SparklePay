@@ -470,12 +470,11 @@
   }
 
   .access-card,
-  .sales-card,
-  .core-card {
+  .sales-card{
     padding: 16px;
     width: 100%;
     max-width: 100%;
-    min-width: 200px;     
+    min-width: 180px !important;     
     min-height: 200px;
     max-height: 410px;
   }
