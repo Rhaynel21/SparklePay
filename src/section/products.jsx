@@ -33,18 +33,18 @@ const Products = () => {
           <div className="text">
             {activeTab === 'pos' ? (
               <>
-                <h2>A POS that does it all <br /> for you.</h2>
+                <h2>A POS that does it all <span class="br-mobile-hide"><br /></span> for you.</h2>
                 <p>
                   From real-time sales insights to effortless inventory management, everything you
-                  <br />need is at your fingertips.
+                  <span class="br-mobile-hide"><br /></span>need is at your fingertips.
                 </p>
               </>
             ) : ( 
               <>
-                <h2>Your next self-checkout <br />is here.</h2>
+                <h2>Your next self-checkout <span class="br-mobile-hide"><br /></span>is here.</h2>
                 <p>
-                  The smart, seamless solution that lets customers<br /> skip the line so they remember
-                  the<br />  service, not the wait.
+                  The smart, seamless solution that lets customers skip the line so they <span class="br-mobile-hide"><br /></span> remember
+                  the service, not <span class="br-mobile-hide"><br /></span> the wait.
                 </p>
               </>
             )}
