@@ -14,8 +14,8 @@
 .sales-card {
     align-items: center;
     max-width: 100%;
-    max-height: 240px;
-    min-height: 240px !important; /* Ensure cards have a minimum height */
+    max-height: 200px ;
+    min-height: 200px !important; /* Ensure cards have a minimum height */
   }
 
 .hero-left {
@@ -111,6 +111,7 @@
 .access-cards {
   flex: 1;
   min-width: 300px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -210,6 +211,7 @@
   font-family: 'Aliotext', sans-serif;
   margin-top: -20px;
   text-align: center;
+  padding-bottom: 40px;
 }
 
 .sales-content {
@@ -389,7 +391,24 @@
   margin-left: 0;
   margin-right: 0;
 }
-
+@media (max-width: 1240px) {
+ .access-card,
+.sales-card {
+    align-items: center;
+    max-width: 100%;
+    max-height: 220px  !important;
+    min-height: 220px !important; /* Ensure cards have a minimum height */
+  }
+}
+@media (max-width: 1090px) {
+  .access-card,
+  .sales-card {
+    align-items: center;
+    max-width: 100%;
+    max-height: 260px !important;
+    min-height: 260px !important; /* Ensure cards have a minimum height */
+  }
+}
 /* ------------------- Tablet Optimization ------------------- */
 @media (max-width: 1024px) {
   .posfeatures-hero {
@@ -448,6 +467,15 @@
     max-height: 300px !important;
     min-height: 200px !important; /* Ensure cards have a minimum height */
   }
+}
+@media (max-width: 900px) {
+  .access-card,
+  .sales-card {
+    width: 100%;
+    max-width: 100%;
+    min-height: 210px !important; /* Ensure cards have a minimum height */
+  }
+
 }
 
 /* ------------------- Mobile Optimization ------------------- */
