@@ -71,7 +71,6 @@
   max-height: 550px;
   position: relative;
   z-index: 1;
-  margin-right: clamp(20px, 3vw, 100px);
 }
 
 .self-checkout-section {
