@@ -77,7 +77,6 @@
   max-height: 550px;
   position: relative;
   z-index: 1;
-  /* margin-right removed for better centering */
 }
 
 #posfeatures-section2 {
@@ -106,7 +105,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 60px;
 }
 
 .access-cards {
@@ -127,13 +126,10 @@
   padding: 24px 28px;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-  width: 400px;
+  width:100%;
   max-width: 100%;
-  min-height: 200px; /* min-height for flexibility */
   height: auto; /* allow height to adjust based on content */
-  max-width: 100%;
   min-height: 200px; /* min-height for flexibility */
-  height: auto; /* allow height to adjust based on content */
   margin-bottom: 10px;
   transition: transform 0.3s ease;
   box-sizing: border-box;
@@ -237,6 +233,7 @@
 .sales-cards {
   flex: 1;
   min-width: 300px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -251,13 +248,10 @@
   padding: 24px 28px;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-  width: 400px;
-  max-width: 100%;
-  min-height: 200px; /* changed to min-height */
+  width: 100%;
   height: auto;
   max-width: 100%;
   min-height: 200px; /* changed to min-height */
-  height: auto;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
   box-sizing: border-box;
