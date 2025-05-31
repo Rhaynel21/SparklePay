@@ -72,6 +72,9 @@
   margin-top: 120px !important;
   max-width: 750px;
   max-height: 550px;
+  margin-top: 120px !important;
+  max-width: 750px;
+  max-height: 550px;
   position: relative;
   z-index: 1;
   /* margin-right removed for better centering */
@@ -115,6 +118,8 @@
   margin-top: 20px;
   align-items: center; /* Center cards horizontally */
   /* margin-left removed for responsiveness */
+  align-items: center; /* Center cards horizontally */
+  /* margin-left removed for responsiveness */
 }
 
 .access-card {
@@ -126,7 +131,15 @@
   max-width: 100%;
   min-height: 200px; /* min-height for flexibility */
   height: auto; /* allow height to adjust based on content */
+  max-width: 100%;
+  min-height: 200px; /* min-height for flexibility */
+  height: auto; /* allow height to adjust based on content */
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
   transition: transform 0.3s ease;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -150,6 +163,7 @@
 
 .access-card:hover {
   transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .access-icon {
@@ -164,6 +178,7 @@
   gap: 10px;
 }
 
+
 .access-icon-title svg {
   font-size: 1.5rem;
   color: #0066ff;
@@ -172,11 +187,19 @@
 .access-img {
   flex: 1;
   max-width: 600px;
+  max-width: 600px;
   width: 100%;
+  /* margin-right removed for better centering */
   /* margin-right removed for better centering */
 }
 
 /* Sales Reports & Inventory */
+.posfeatures-section {
+  padding: 80px 5vw;
+  background: white;
+  font-family: 'Aliotext', sans-serif;
+}
+
 .posfeatures-section {
   padding: 80px 5vw;
   background: white;
@@ -205,7 +228,9 @@
 .sales-img {
   flex: 1;
   max-width: 600px;
+  max-width: 600px;
   width: 100%;
+  /* margin-left removed for better centering */
   /* margin-left removed for better centering */
 }
 
@@ -215,6 +240,8 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  align-items: center;
+  /* margin-left removed */
   align-items: center;
   /* margin-left removed */
 }
@@ -228,7 +255,15 @@
   max-width: 100%;
   min-height: 200px; /* changed to min-height */
   height: auto;
+  max-width: 100%;
+  min-height: 200px; /* changed to min-height */
+  height: auto;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
   transition: transform 0.3s ease;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -237,6 +272,7 @@
 }
 
 .sales-card:hover {
+  transform: translateY(-4px);
   transform: translateY(-4px);
 }
 
@@ -260,6 +296,7 @@
   flex-wrap: wrap;
   gap: 40px;
 }
+
 
 .menu-content img {
   width: 75%;
@@ -296,9 +333,13 @@
   padding: 28px 24px;
   text-align: left;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
   width: calc(33.333% - 20px);
   min-width: 280px;
   box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
@@ -345,6 +386,17 @@
 }
 
 /* ------------------- Tablet Optimization ------------------- */
+/* ------------------- Base Tweaks (remove rigid margins) ------------------- */
+.hero-left,
+.access-cards,
+.sales-cards,
+.sales-img,
+.access-img {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* ------------------- Tablet Optimization ------------------- */
 @media (max-width: 1024px) {
   .posfeatures-hero {
     flex-direction: column;
@@ -356,10 +408,17 @@
   .dashboard-img {
     margin: 0 auto;
     max-width: 100%;
+    gap: 32px;
+  }
+
+  .dashboard-img {
+    margin: 0 auto;
+    max-width: 100%;
   }
 
   .hero-left {
     margin: 0;
+    text-align: center;
     text-align: center;
   }
 
@@ -367,6 +426,7 @@
   .sales-content {
     flex-direction: column;
     align-items: center;
+    gap: 32px;
     gap: 32px;
   }
 
@@ -384,34 +444,66 @@
   .sales-card {
     width: 100%;
     max-width: 380px;
+    max-width: 380px;
   }
 
   .core-card {
     width: 100%;
     max-width: 380px;
+    max-width: 380px;
   }
 }
 
 /* ------------------- Mobile Optimization ------------------- */
+/* ------------------- Mobile Optimization ------------------- */
 @media (max-width: 600px) {
   .hero-left h2 {
+    font-size: 2.2rem;
     font-size: 2.2rem;
   }
 
   .hero-left p,
   .access-card p,
   .sales-card p,
-  .core-card p {
+  .core-card p  {
     font-size: 1rem;
   }
 
   .access-card,
   .sales-card,
   .core-card {
-    padding: 20px;
+    padding: 16px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 200px;     
+    min-height: 200px;
+    max-height: 410px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .sales-card {
+    padding: 16px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 200px;     
+    min-height: 150px !important; /* Ensure cards have a minimum height */
+    max-height: 410px;
+  }
+  .core-card{
+    min-height: 240px !important;
+    max-height: 240px !important;
+  }
+
+  .hero-btn {
+    width: 100%;
+    text-align: center;
   }
 
   .core-card h3 {
+    font-size: 1.2rem;
     font-size: 1.2rem;
   }
 
@@ -425,5 +517,15 @@
 
   .dashboard-img {
     margin-top: 30px;
+    font-size: 0.95rem;
   }
+
+  .core-features {
+    padding: 0 10px;
+  }
+
+  .dashboard-img {
+    margin-top: 30px;
+  }
+
 }
