@@ -53,23 +53,45 @@
     gap: 25px;
 }
 
+
 .card {
    
     border-radius: 10px;
     padding: 10px 30px; /* Adjusted padding for all cards */
     width: 260px;
-    background: #f0f0f0;;
+    background: #f0f0f0;
     text-align: left;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
     font-family: 'Inter', sans-serif; /* Apply Inter font */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 300px;
+}
+.card:hover{
+     transform: scale(1.05);
+     background: #009cff;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 156, 255, 0.3);
 }
 
 .card.featured {
-    background: #009cff;
-    color: white;
+    background: #f0f0f0;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.card.featured:hover{
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 156, 255, 0.3);
+     background: #009cff;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 156, 255, 0.3); 
 }
 
 .card h3 {
@@ -109,9 +131,26 @@
 .contact-btn.dark {
     background: #000;
     color: white;
+    margin-top: 85px;
 }
 
 .contact-btn.light {
-    background: white;
-    color: #009cff;
+    background: rgb(0, 0, 0);
+    color: #f5f6f7;
+    margin-bottom:10px;
+    transition: background 0.3s ease, color 0.3s ease;
+    margin-top: 40px;
+}
+
+.card:hover .contact-btn.light,
+.card.featured:hover .contact-btn.light {
+  background: white;
+  color: #0080ff;
+  border: 1px solid #0080ff;
+}
+.card:hover .contact-btn.dark,
+.card.featured:hover .contact-btn.dark {
+  background: white;
+  color: #0080ff;
+  border: 1px solid #0080ff;
 }

@@ -8,20 +8,20 @@
   gap: 48px;
   background-image: url('../assets/bg2.png');
   background-size: cover;
-  font-family: 'Aliotext', sans-serif; /* Apply Aliotext font */
-  
+  font-family: 'Aliotext', sans-serif;
 }
+
 .hero-left {
   max-width: 400px;
   z-index: 2;
-  margin-left: 100px;
+  /* margin-left removed for better centering on smaller screens */
 }
 
 .hero-left h2 {
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 18px;
-  font-family: 'Aliotext', sans-serif; /* Choose similar rounded font */
+  font-family: 'Aliotext', sans-serif;
   color: #111;
 }
 
@@ -44,6 +44,7 @@
   transition: background 0.2s;
   border: none;
   box-shadow: 0 4px 16px rgba(0,145,255,0.08);
+  cursor: pointer;
 }
 
 .hero-btn:hover {
@@ -61,11 +62,12 @@
 
 .dashboard-img {
   width: 100%;
-  margin-top: 150px;
-  max-width: 480px;
+  margin-top: 120px !important;
+  max-width: 750px;
+  max-height: 550px;
   position: relative;
   z-index: 1;
-  margin-right: 100px;
+  /* margin-right removed for better centering */
 }
 
 #posfeatures-section2 {
@@ -87,7 +89,6 @@
   font-family: 'Aliotext', sans-serif;
   margin-top: -20px;
   text-align: center;
-
 }
 
 .access-content {
@@ -103,9 +104,10 @@
   min-width: 300px;
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
   gap: 24px;
   margin-top: 20px;
+  align-items: center; /* Center cards horizontally */
+  /* margin-left removed for responsiveness */
 }
 
 .access-card {
@@ -114,8 +116,15 @@
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
   width: 400px;
-  height: 170px;
+  max-width: 100%;
+  min-height: 200px; /* min-height for flexibility */
+  height: auto; /* allow height to adjust based on content */
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 .access-card h3 {
@@ -133,7 +142,7 @@
 }
 
 .access-card:hover {
-   transform: zoom-in;
+  transform: translateY(-4px);
 }
 
 .access-icon {
@@ -147,6 +156,7 @@
   align-items: center;
   gap: 10px;
 }
+
 .access-icon-title svg {
   font-size: 1.5rem;
   color: #0066ff;
@@ -154,13 +164,18 @@
 
 .access-img {
   flex: 1;
-  max-width: 500px;
+  max-width: 600px;
   width: 100%;
-  margin-right: 100px;
+  /* margin-right removed for better centering */
 }
 
-
 /* Sales Reports & Inventory */
+.posfeatures-section {
+  padding: 80px 5vw;
+  background: white;
+  font-family: 'Aliotext', sans-serif;
+}
+
 .posfeatures-section h2 {
   font-size: 3rem;
   font-weight: 700;
@@ -171,11 +186,6 @@
   text-align: center;
 }
 
-.posfeatures-section {
-  padding: 80px 5vw;
-  background: white;
-  font-family: 'Aliotext', sans-serif;
-}
 .sales-content {
   display: flex;
   align-items: center;
@@ -187,9 +197,9 @@
 
 .sales-img {
   flex: 1;
-  max-width: 500px;
+  max-width: 600px;
   width: 100%;
-  margin-left: 100px;
+  /* margin-left removed for better centering */
 }
 
 .sales-cards {
@@ -198,7 +208,8 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-left: 100px;
+  align-items: center;
+  /* margin-left removed */
 }
 
 .sales-card {
@@ -207,12 +218,19 @@
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
   width: 400px;
-  height: 170px;
+  max-width: 100%;
+  min-height: 200px; /* changed to min-height */
+  height: auto;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 .sales-card:hover {
-   transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .sales-card h3 {
@@ -235,11 +253,11 @@
   flex-wrap: wrap;
   gap: 40px;
 }
+
 .menu-content img {
   width: 75%;
   margin-top: -60px;
 }
-
 
 .core-management-section {
   padding: 80px 20px;
@@ -270,10 +288,13 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
   padding: 28px 24px;
   text-align: left;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
   width: calc(33.333% - 20px);
   min-width: 280px;
   box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 .core-card:hover {
@@ -306,36 +327,44 @@
   line-height: 1.6;
 }
 
+/* ------------------- Base Tweaks (remove rigid margins) ------------------- */
+.hero-left,
+.access-cards,
+.sales-cards,
+.sales-img,
+.access-img {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* ------------------- Tablet Optimization ------------------- */
 @media (max-width: 1024px) {
   .posfeatures-hero {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 60px 4vw;
+    gap: 32px;
+  }
+
+  .dashboard-img {
+    margin: 0 auto;
+    max-width: 100%;
   }
 
   .hero-left {
     margin: 0;
-    max-width: 100%;
-  }
-
-  .dashboard-img {
-    margin: 40px 0 0 0;
-    max-width: 100%;
+    text-align: center;
   }
 
   .access-content,
   .sales-content {
     flex-direction: column;
     align-items: center;
-    margin-left: 0;
-    margin-right: 0;
+    gap: 32px;
   }
 
   .access-cards,
   .sales-cards {
-    margin-left: 0;
-    margin-right: 0;
     align-items: center;
   }
 
@@ -347,39 +376,54 @@
   .access-card,
   .sales-card {
     width: 100%;
-    max-width: 400px;
+    max-width: 380px;
   }
 
   .core-card {
     width: 100%;
-    max-width: 400px;
+    max-width: 380px;
   }
 }
 
+/* ------------------- Mobile Optimization ------------------- */
 @media (max-width: 600px) {
-  
   .hero-left h2 {
-    
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .hero-left p,
   .access-card p,
-  .sales-card p {
+  .sales-card p,
+  .core-card p {
     font-size: 1rem;
   }
 
   .access-card,
   .sales-card,
   .core-card {
-    padding: 20px;
+    padding: 16px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-btn {
+    width: 100%;
+    text-align: center;
   }
 
   .core-card h3 {
-    font-size: 16px;
+    font-size: 1.2rem;
   }
 
   .core-card p {
-    font-size: 14px;
+    font-size: 0.95rem;
+  }
+
+  .core-features {
+    padding: 0 10px;
+  }
+
+  .dashboard-img {
+    margin-top: 30px;
   }
 }

@@ -7,7 +7,7 @@ const features = [
     title: 'All-in-One System',
     description:
       'From seamless logins and sales tracking to inventory alerts and receipt printing, Sparkle brings all your essential tools together in one smart, easy-to-use platform.',
-    icon: <FaTools />, // Updated icon
+    icon: <FaTools />, // Updated icon 
   },
   {
     title: 'Real-Time Control',
