@@ -52,7 +52,10 @@
   font-weight: 600;
   margin-bottom: 30px;
   font-family: 'Aliotext', sans-serif;
-  max-width: 100%;
+  width: 100%;
+  max-width: 550px;
+  margin-inline: auto;
+  text-align: left;
 }
 
 .home-buttons {
@@ -112,12 +115,18 @@
 .mobile-only {
   display: none;
 }
-@media (max-width: 1239px){
-  .home-text{
-    padding-top:40px;
+.br-mobile-hide {
+  display: inline;
+}
+/* Responsive Breakpoints */
+
+@media (max-width: 1239px) {
+  .home-text {
+    padding-top: 40px;
     text-align: center !important;
     flex: 1 1 450px;
   }
+
   .home-content {
     flex-direction: column;
     flex: 1 1 100%;
@@ -125,31 +134,47 @@
     margin-top: 20px;
     text-align: center !important;
   }
-  .main-image{
-    margin-top:0;
+
+  .main-image {
+    margin-top: 0;
   }
 
+  .home-text p {
+    text-align: center;
+  }
 }
+
 /* Laptops & tablets */
 @media (max-width: 1024px) {
-  .home-buttons{
+  .home-buttons {
     justify-content: center;
     gap: 30px;
   }
-  .home-text{
+
+  .home-text {
     text-align: center !important;
   }
+
   .home-text h1 {
     font-size: 2.8rem;
   }
+
   .home-content {
     flex-direction: column;
+    text-align: center;
+  }
+
+  .home-text p {
     text-align: center;
   }
 }
 
 /* Tablets & landscape phones */
 @media (max-width: 768px) {
+    .br-mobile-hide {
+    display: none;
+  }
+
   .home-content {
     flex-direction: column;
     text-align: center;
@@ -173,6 +198,8 @@
 
   .home-text p {
     font-size: 0.95rem;
+    text-align: center;
+    line-break: none;
   }
 
   .main-image.desktop-only {
@@ -194,6 +221,10 @@
 
 /* Small phones */
 @media (max-width: 480px) {
+    .br-mobile-hide {
+    display: none;
+  }
+
   .home-text h1 {
     font-size: 1.8rem;
   }
@@ -204,6 +235,9 @@
 
   .home-text p {
     font-size: 0.9rem;
+    text-align: center;
+    line-break: none;
+  
   }
 
   .btn {

@@ -6,7 +6,6 @@
   margin-top: -40px;
   min-height: 510px;
   max-height: 700px;
-  
 }
 
 /* Tabs Header */
@@ -86,7 +85,8 @@
   color: #555;
   margin-bottom: 30px;
   font-family: 'Aliotext', sans-serif;
-  width: 510px;
+  width: 100%;
+  max-width: 510px;
 }
 
 .text .btn {
@@ -133,6 +133,7 @@
   .text p {
     font-size: 1.3rem;
   }
+
   .main-image {
     height: auto;
     width: auto;
