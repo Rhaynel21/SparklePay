@@ -10,6 +10,13 @@
   background-size: cover;
   font-family: 'Aliotext', sans-serif;
 }
+.access-card,
+.sales-card {
+    align-items: center;
+    max-width: 100%;
+    max-height: 240px;
+    min-height: 240px !important; /* Ensure cards have a minimum height */
+  }
 
 .hero-left {
   max-width: 400px;
@@ -404,6 +411,9 @@
     padding: 16px;
     width: 100%;
     max-width: 100%;
+    min-width: 200px;     
+    min-height: 200px;
+    max-height: 410px;
   }
 
   .hero-btn {
